@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url(https://cdn.vectorstock.com/i/1000v/13/40/todo-list-seamless-pattern-universal-background-vector-7561340.avif);
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.mainHeading h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(47, 38, 38);
+}
+
+
+.inputContainer {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  width: 30%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input input {
+  width: 100%;
+  height: 2em;
+  border: none;
+  outline: none;
+}
+
+.input i {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: grey;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 50px;
+}
+
+.todos, .active-toDos {
+  width: 40%;
+}
+
+.todos h2, .active-toDos h2 {
+  color: rgb(47, 38, 38);
+  text-align: center;
+}
+
+.todo {
+  margin-top: 0.8em;
+  width: 100%;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left p {
+  margin-left: 8px;
+  font-size: medium;
+  font-weight: 700;
+  color: rgb(128, 128, 128);
+}
+
+.right i {
+  cursor: pointer;
+  color: grey;
 }
